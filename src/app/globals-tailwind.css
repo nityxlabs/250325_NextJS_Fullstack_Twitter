@@ -1,0 +1,11 @@
+/* NOTE: to get Tailwind Intellisense to work, I need a CSS file that imports tailwind CSS `@import "tailwindcss";`: https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss */
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+  /* themes: nord --default, abyss --prefersdark, cupcake, dracula; */
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
+}

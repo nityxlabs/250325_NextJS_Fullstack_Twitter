@@ -1,0 +1,22 @@
+.toast-notification-0 {
+  .c-toast {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+
+    background: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    opacity: 0;
+    padding: 8px;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+
+    &--visible {
+      opacity: 1;
+      top: 50px;
+    }
+  }
+}

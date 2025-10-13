@@ -1,0 +1,370 @@
+@use "sass:map";
+
+// Mobile first (used in @media min-width queries)
+$breakpoint-xs: 320px; // Small mobile
+$breakpoint-sm: 375px; // iPhone-size mobile
+$breakpoint-md: 600px; // Phablets / small tablets
+$breakpoint-lg: 768px; // Tablets
+$breakpoint-xl: 1024px; // Small laptop / landscape tablet
+$breakpoint-2xl: 1280px; // Standard desktop
+$breakpoint-3xl: 1440px; // Large desktop
+
+// Maps: colors
+$twitter-text-colors: (
+  "primary": #0f1419,
+  "secondary": #536471,
+  "placeholder": #9aa5b1,
+  "dark-primary": #e7e9ea,
+  "dark-secondary": #71767b,
+);
+
+$twitter-background-colors: (
+  "default": #ffffff,
+  "alt": #f7f9f9,
+  "dark": #15202b,
+  "hover": #e8f5fd,
+  "dark-alt": #192734,
+);
+
+$twitter-border-colors: (
+  "light": #eff3f4,
+  "medium": #e1e8ed,
+  "dark": #2f3336,
+  "secondary": #536471,
+);
+
+$twitter-ui-feedback: (
+  "blue": #1da1f2,
+  "follow": #1da1f2,
+  "like": #e0245e,
+  "retweet": #17bf63,
+  "notification": #1da1f2,
+  "error": #e0245e,
+  "focus": #1da1f2,
+);
+
+// Map: Font Sizes (label → size)
+$font-sizes: (
+  // 12px
+  "xs": 0.75rem,
+  // 14px
+  "sm": 0.875rem,
+  // 16px
+  "base": 1rem,
+  // 18px
+  "md": 1.125rem,
+  // 20px
+  "lg": 1.25rem,
+  // 24px
+  "xl": 1.5rem,
+  // 32px
+  "2xl": 2rem,
+  // 40px
+  "3xl": 2.5rem,
+  // 48px
+  "4xl": 3rem,
+  // 56px
+  "5xl": 3.5rem,
+  // 64px
+  "6xl": 4rem
+);
+
+// Map: Font Weights (label → weight)
+$font-weights: (
+  "thin": 100,
+  "extra-light": 200,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+  "extra-bold": 800,
+  "black": 900,
+);
+
+// Map: Border Radius
+$border-radius: (
+  "none": 0,
+  // 2px
+  "sm": 0.125rem,
+  // 4px
+  "base": 0.25rem,
+  // 6px
+  "md": 0.375rem,
+  // 8px
+  "lg": 0.5rem,
+  // 12px
+  "xl": 0.75rem,
+  // 16px
+  "2xl": 1rem,
+  // Fully rounded (circle)
+  "full": 9999px,
+);
+
+// Map: margin
+$margin: (
+  "0": 0,
+  // 4px
+  "xs": 0.25rem,
+  // 8px
+  "sm": 0.5rem,
+  // 12px
+  "md": 0.75rem,
+  // 16px
+  "base": 1rem,
+  // 20px
+  "lg": 1.25rem,
+  // 24px
+  "xl": 1.5rem,
+  // 32px
+  "2xl": 2rem,
+);
+
+// Map: padding
+$padding: (
+  "0": 0,
+  // 4px
+  "xs": 0.25rem,
+  // 8px
+  "sm": 0.5rem,
+  // 12px
+  "md": 0.75rem,
+  // 16px
+  "base": 1rem,
+  // 20px
+  "lg": 1.25rem,
+  // 24px
+  "xl": 1.5rem,
+  // 32px
+  "2xl": 2rem,
+);
+
+.sign-up-1 {
+  height: 100vh;
+  width: 100%;
+
+  .button-pill {
+    border: none;
+    border-radius: map.get($border-radius, full);
+    cursor: pointer;
+    font-size: map.get($font-sizes, sm);
+    font-weight: map.get($font-weights, "semi-bold");
+    padding: map.get($padding, md);
+    text-shadow: 0 1px 0 var(--shadow-color);
+
+    &--primary {
+      // --shadow-color: rgba(0, 0, 0, 0.2);
+      --shadow-color: rgba(100, 100, 100, 0.4);
+
+      background-color: map.get($twitter-ui-feedback, "blue");
+      box-shadow: 0 2px 5px 0 var(--shadow-color);
+    }
+
+    &--primary-outline {
+      background-color: transparent;
+      border: 1px solid map.get($twitter-ui-feedback, "blue");
+      color: map.get($twitter-text-colors, "dark-primary");
+    }
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .large-logo {
+    display: none;
+
+    @media (min-width: $breakpoint-xl) {
+      display: block;
+    }
+  }
+
+  .signup-input {
+    /*
+    u-flex u-align-items-center u-justify-content-center u-border-color-secondary u-border-style-solid u-border-width-2px u-border-radius-base u-p-xs
+    */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid map.get($twitter-border-colors, secondary);
+    border-radius: map.get($border-radius, base);
+    padding: map.get($padding, "md");
+
+    input {
+      border: none;
+      margin-left: map.get($margin, "s");
+    }
+
+    input:focus {
+      border: none;
+      outline: none;
+    }
+
+    // NOTE: the `&:has` and `&:focus-within` do the same thing - update the style of the parent. However, &:focus-within applies to any child with a focus whereas &:has() can be applied to a specific child
+    // &:has(input:focus) {
+    //   border: 3px double white;
+    // }
+
+    &:focus-within {
+      border: 3px double white;
+    }
+  }
+
+  // CSS Utilities
+  .u-flex {
+    display: flex;
+  }
+
+  .u-flex-col {
+    flex-direction: column;
+  }
+
+  .u-justify-content-center {
+    justify-content: center;
+  }
+
+  .u-align-items-center {
+    align-items: center;
+  }
+
+  .u-flex-grow-1 {
+    flex: 1;
+  }
+
+  .u-border-none {
+    border: none;
+  }
+
+  .u-border-style-solid {
+    border-style: solid;
+  }
+
+  // CSS Utilities: loops
+
+  // Text color classes
+  @each $name, $color in $twitter-text-colors {
+    .u-text-#{$name} {
+      color: #{$color};
+    }
+  }
+
+  // Background color classes
+  @each $name, $color in $twitter-background-colors {
+    .u-bg-#{$name} {
+      background-color: $color;
+    }
+  }
+
+  // Border color classes
+  @each $name, $color in $twitter-border-colors {
+    .u-border-color-#{$name} {
+      border-color: $color;
+    }
+  }
+
+  @for $i from 1 through 3 {
+    .u-border-width-#{$i}px {
+      border-width: #{$i}px;
+    }
+  }
+
+  // Border radius utility classes
+  @each $name, $radius in $border-radius {
+    .u-border-radius-#{$name} {
+      border-radius: #{$radius};
+    }
+  }
+
+  // UI feedback colors
+  @each $name, $color in $twitter-ui-feedback {
+    .u-text-#{$name} {
+      color: $color;
+    }
+
+    .u-bg-#{$name} {
+      background-color: $color;
+    }
+
+    .u-border-#{$name} {
+      border-color: $color;
+    }
+  }
+
+  // Font size utility classes
+  @each $name, $size in $font-sizes {
+    .u-font-size-#{$name} {
+      font-size: $size;
+    }
+  }
+
+  // Font weight utility classes
+  @each $name, $weight in $font-weights {
+    .u-font-weight-#{$name} {
+      font-weight: $weight;
+    }
+  }
+
+  // Generate classes like .m-sm, .mt-md, .mx-lg, etc.
+  @each $name, $value in $margin {
+    .u-m-#{$name} {
+      margin: $value;
+    }
+    .u-mt-#{$name} {
+      margin-top: $value;
+    }
+    .u-mr-#{$name} {
+      margin-right: $value;
+    }
+    .u-mb-#{$name} {
+      margin-bottom: $value;
+    }
+    .u-ml-#{$name} {
+      margin-left: $value;
+    }
+    .u-mx-#{$name} {
+      margin-left: $value;
+      margin-right: $value;
+    }
+    .u-my-#{$name} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
+  }
+
+  // Generate classes like .p-sm, .pt-md, .px-lg, etc.
+  @each $name, $value in $padding {
+    .u-p-#{$name} {
+      padding: $value;
+    }
+    .u-pt-#{$name} {
+      padding-top: $value;
+    }
+    .u-pr-#{$name} {
+      padding-right: $value;
+    }
+    .u-pb-#{$name} {
+      padding-bottom: $value;
+    }
+    .u-pl-#{$name} {
+      padding-left: $value;
+    }
+    .u-px-#{$name} {
+      padding-left: $value;
+      padding-right: $value;
+    }
+    .u-py-#{$name} {
+      padding-top: $value;
+      padding-bottom: $value;
+    }
+    .u-p-inline {
+      padding-inline: $value;
+    }
+  }
+}

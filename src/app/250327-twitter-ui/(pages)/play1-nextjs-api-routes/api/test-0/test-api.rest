@@ -1,0 +1,23 @@
+// Experiment: GET api/test-0/
+GET http://localhost:3000/250327-twitter-ui/play1-nextjs-api-routes/api/test-0
+
+###
+POST http://localhost:3000/250327-twitter-ui/play1-nextjs-api-routes/api/test-0
+Content-Type: application/json
+
+{
+  "name": "Pikachu",
+  "email": "pikachu@poke.mon",
+  "password": "abc12345",
+  "shouldError": false
+}
+
+###
+POST http://localhost:3000/250327-twitter-ui/play1-nextjs-api-routes/api/test-0
+Content-Type: application/json
+
+{
+  "name": "Plusle",
+  "shouldError": true
+}
+

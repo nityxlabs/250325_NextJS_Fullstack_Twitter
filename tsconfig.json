@@ -13,6 +13,8 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    // Source: https://stackoverflow.com/questions/76042962/why-must-i-import-ts-files-as-js-files-in-this-case/76332913#76332913
+    "allowImportingTsExtensions": true,
     "plugins": [
       {
         "name": "next"

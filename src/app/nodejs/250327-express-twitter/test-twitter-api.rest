@@ -1,0 +1,204 @@
+// Source - how to use Client REST: https://www.youtube.com/watch?v=fgTGADljAeg @10:44
+
+// Experiment: test basic GET
+GET https://jsonplaceholder.typicode.com/posts/2
+
+###
+
+// Experiment: test POST
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{ 
+  "title": "Oddish",
+  "body": "Hello from Oddish",
+  "id": 24
+}
+
+###
+
+PUT https://jsonplaceholder.typicode.com/comments/3
+Content-Type: application/json
+
+{ 
+  "title": "Drowzee",
+  "body": "Drowzee hypnotizing",
+  "id": 33
+}
+
+### My Twitter Fullstack 
+
+// Experiment: api/auth/test
+curl http://localhost:8000/nodejs/api/auth/test
+
+###
+
+// Experiment: sign up new user
+POST http://localhost:8000/nodejs/api/auth/signup
+Content-Type: application/json
+
+{ 
+  "email": "onix@pokemon.com",
+  "fullName": "Onix Rattlerock",
+  "password": "abc123",
+  "username": "Onix"
+}
+
+###
+
+// Experiment: sign up new user
+POST http://localhost:8000/nodejs/api/auth/signup
+Content-Type: application/json
+
+{ 
+  "email": "caterpie@pokemon.com",
+  "fullName": "Caterpie Cutiepie",
+  "password": "abc123",
+  "username": "Caterpie"
+}
+
+###
+
+// Experiment: login - correct credentials
+POST http://localhost:8000/nodejs/api/auth/login
+Content-Type: application/json
+
+{ 
+  "password": "abc123",
+  "username": "Poliwag"
+  // "username": "Squirtle"
+  // "username": "Onix"
+}
+
+###
+
+// Experiment: login - incorrect credentials
+POST http://localhost:8000/nodejs/api/auth/login
+Content-Type: application/json
+
+{ 
+  "password": "abc123-wrong-password",
+  "username": "Pidgey"
+}
+
+###
+
+// Experiment: logout user
+POST http://localhost:8000/nodejs/api/auth/logout
+
+###
+
+// Experiment: Fullstack Twitter App: cURL - login using api/auth/me
+GET http://localhost:8000/nodejs/api/auth/me
+
+###
+
+// Experiment: test API call GET to api/users/test
+GET http://localhost:8000/nodejs/api/users/test
+
+
+###
+
+// Experiment: api/users/profile/:username
+GET http://localhost:8000/nodejs/api/users/profile/Charmander
+
+###
+
+// Experiment: try to follow another user
+POST http://localhost:8000/nodejs/api/users/follow/67ec25f29ec0c586e0fbc91d
+Content-Type: application/json
+
+###
+
+// Experiment: Suggested Users - api/users/suggested
+GET http://localhost:8000/nodejs/api/users/suggested
+
+###
+
+// Experiment: Update User - update email
+POST http://localhost:8000/nodejs/api/users/update
+Content-Type: application/json
+
+{ 
+  "email": "poliwag@pokemon.com",
+  "username": "Poliwag",
+  "bio": "I am a cutie little tadpool pokemon that likes to wiggle and jiggle and swim around",
+  "link": "poliwag.pokemon.com"
+}
+
+###
+
+// Experiment: Update User - update password
+POST http://localhost:8000/nodejs/api/users/update
+Content-Type: application/json
+
+{ 
+  "currentPassword": "abc12345",
+  "newPassword": "abc123"
+}
+
+###
+
+// Experiment: Make Tweet
+POST http://localhost:8000/nodejs/api/posts/create
+Content-Type: application/json
+
+{
+  "text": "My 15th post: Poliwag deep water whirlpool party!"
+}
+
+###
+
+// Experiment: Delete Tweet
+DELETE http://localhost:8000/nodejs/api/posts/67f7e7d59f704289ecd627ee
+
+###
+
+// Experiment: Comment on Tweet
+POST http://localhost:8000/nodejs/api/posts/comments/67f95c0d1674e22a2b02b1cb
+Content-Type: application/json
+
+{
+  "text": "My 4th comment: Geodude like a beach ball"
+}
+
+###
+
+// Experiment: Like Tweet
+# POST http://localhost:8000/nodejs/api/posts/likes/684acbc7a0e0cb40fb88947f
+POST http://localhost:8000/nodejs/api/posts/likes/68a352ff3d6af0db4961bb25
+
+###
+
+// Experiment: Get All Posts
+GET http://localhost:8000/nodejs/api/posts/all
+
+### 
+
+// Experiment: Get liked posts from user
+GET http://localhost:8000/nodejs/api/posts/likes/67ec25f29ec0c586e0fbc91d
+
+###
+
+// Experiment: Get all posts from followees
+GET http://localhost:8000/nodejs/api/posts/following
+
+###
+
+// Experiment: Get all posts written by a user
+GET http://localhost:8000/nodejs/api/posts/users/Onix
+
+###
+
+// Experiment: GET all notifications "to:user" (depends who I am signed in as)
+GET http://localhost:8000/nodejs/api/notifications
+
+###
+
+// Experiment: DELETE all notifications "to:user" (depends who I am signed in as)
+DELETE http://localhost:8000/nodejs/api/notifications
+
+###
+
+// Experiment: Delete single notification "to:user" (depends who I am signed in as)
+DELETE http://localhost:8000/nodejs/api/notifications/684ad18aa0e0cb40fb889541

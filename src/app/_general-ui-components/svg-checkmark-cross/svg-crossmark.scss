@@ -1,0 +1,34 @@
+.svg-crossmark {
+  --svg-transition-time: 0.25s;
+
+  // svg path,
+  // svg line,
+  // svg circle {
+  //   fill: none;
+  //   // stroke: #111;
+  //   stroke-linecap: round;
+  //   stroke-linejoin: round;
+  //   transition: var(--svg-transition-time);
+  // }
+
+  fill: none;
+  // stroke: #111;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  .cross-1,
+  .cross-2 {
+    transition: var(--svg-transition-time);
+  }
+
+  &--visible {
+    .cross-1 {
+      stroke-dashoffset: 0;
+    }
+
+    .cross-2 {
+      stroke-dashoffset: 0;
+      transition-delay: var(--svg-transition-time);
+    }
+  }
+}

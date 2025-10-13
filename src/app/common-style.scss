@@ -1,0 +1,1188 @@
+/*
+Source: https://itsashapechristmas.co.uk/
+*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
+// Source: https://fonts.google.com/specimen/Shrikhand?preview.text=Mohammed
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Sono:wght@200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Shrikhand&family=Sono:wght@200..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Shrikhand&family=Sono:wght@200..800&family=Varela&display=swap");
+
+$color-white: #fff;
+$color-gray-e: #eee;
+$color-gray-d: #ddd;
+$color-gray-c: #ccc;
+$color-gray-b: #bbb;
+$color-gray-a: #aaa;
+$color-gray-9: #999;
+$color-gray-8: #888;
+$color-gray-7: #777;
+$color-gray-6: #666;
+$color-gray-5: #555;
+$color-gray-4: #444;
+$color-black-3: #333;
+$color-black-2: #222;
+$color-black-1f: #1f1f1f;
+$color-black-1e: #1e1e1e;
+$color-black-1d: #1d1d1d;
+$color-black-1: #111;
+$color-black: #000;
+
+$color-white-transparent: rgba(255, 255, 255, 0.3);
+$color-black-transparent: rgba(0, 0, 0, 0.3);
+
+$color-red-bittersweet: #ff715b;
+$color-pink-watermelon: #f7a9a8;
+$color-green-persian: #1ea896;
+$color-purple-rose: #b97375;
+
+$color-pink-frostbite: #d741a7;
+$color-indigo-persian: #3a1772;
+$color-carolina-blue: #5398be;
+$color-orange-yellow-crayola: #f2cd5d;
+$color-orange-sunray: #dea54b;
+
+// Source: https://dribbble.com/shots/13947183/attachments/5558670?mode=media
+$color-blue: #1458e4;
+$color-blue-light: #2566e3;
+$color-blue-teal: #5dceff;
+
+//Source: https://itsashapechristmas.co.uk/
+$color-white-beige: rgb(245, 241, 233);
+$color-gray-charcoal: rgb(65, 65, 65);
+$color-red: rgb(255, 105, 96);
+$color-red-light: rgb(255, 128, 114);
+$color-mint-chutney: rgb(205, 223, 203);
+$color-green-forest: rgb(16, 101, 112);
+
+// Source: https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff
+$color-yellow-amber: #ffbe0b;
+$color-orange-pantone: #fb5607;
+$color-pink-winter-sky: #ff006e;
+$color-purple-blue-violet: #8338ec;
+$color-blue-azure: #3a86ff;
+$color-green-forest-crayola: #70b77e;
+
+// Source: https://dribbble.com/shots/13912062-Collab-Landing-Page-Kit
+$color-yellow: #ffdc60;
+$color-pink: #ffbac7;
+$color-lavender: #c799c6;
+$color-purple: #5956e9;
+$color-teal-mint: #91cfae;
+$color-cool-beige: #f7dfc6;
+
+// Source: https://coolors.co/713e5a-63a375-edc79b-d57a66-ca6680
+$color-purple-eggplant: #713e5a;
+$color-green-vegetable-mint: #63a375;
+$color-yellow-beige-sunset: #edc79b;
+$color-orange-burnt-sienna: #d57a66;
+$color-red-pink-blush: #ca6680;
+
+// Source: https://coolors.co/eac435-345995-03cea4-fb4d3d-ca1551
+$color-yellow-saffron: #eac435;
+$color-blue-ylnmn-blue: #345995;
+$color-green-miami-mint: #03cea4;
+$color-red-orange-tomato: #fb4d3d;
+$color-red-rose-red: #ca1551;
+
+$color-yellow-wheat: #ead2ac;
+$color-red-light-coral: #df928e;
+$color-red-old-rose: #c58882;
+$color-green-dark-pastel-green: #4cb944;
+$color-yellow-vanilla-sun: #f5ee9e;
+$color-orange-robust-tomato: #f06543;
+$color-red-pink-bright-pink-crayola: #f05365;
+$color-purple-chinese-violet: #925e78;
+
+// Darker colors
+$color-blue-mute-munsell: #62929e;
+$color-green-caribbean-current: #037171;
+$color-orange-syracuse-red-orange: #c84c09;
+$color-purple-mute-lavender-floral: #a491d3;
+$color-yellow-ecru: #c1ae7c;
+
+$pastel-coral: hsl(23, 83%, 82%);
+$pastel-coral--b: hsl(23, 99%, 75%);
+$pastel-pink: hsl(335, 52%, 92%);
+$pastel-pink--b: hsl(335, 82%, 86%);
+$pastel-yellow: hsl(42, 97%, 85%);
+$pastel-yellow--b: hsl(42, 100%, 73%);
+$pastel-green: hsl(100, 64%, 86%);
+$pastel-green--b: hsl(100, 41%, 76%);
+$pastel-blue: hsl(187, 61%, 79%);
+$pastel-blue--b: hsl(187, 54%, 68%);
+$pastel-purple: hsl(283, 24%, 86%);
+$pastel-purple--b: hsl(283, 43%, 80%);
+$pastel-light-gray-blue: hsl(182, 29%, 96%);
+
+$map-color: (
+  "black-1": $color-black-1,
+  "black-1d": $color-black-1d,
+  "black-1e": $color-black-1e,
+  "black-1f": $color-black-1f,
+  "black-2": $color-black-2,
+  "black-3": $color-black-3,
+  "black-transparent": $color-black-transparent,
+  "black": $color-black,
+  "blue-azure": $color-blue-azure,
+  "blue-light": $color-blue-light,
+  "blue-mute-munsell": $color-blue-mute-munsell,
+  "blue-teal": $color-blue-teal,
+  "blue-ylnmn-blue": $color-blue-ylnmn-blue,
+  "blue": $color-blue,
+  "carolina-blue": $color-carolina-blue,
+  "gray-4": $color-gray-4,
+  "gray-5": $color-gray-5,
+  "gray-6": $color-gray-6,
+  "gray-7": $color-gray-7,
+  "gray-8": $color-gray-8,
+  "gray-9": $color-gray-9,
+  "gray-a": $color-gray-a,
+  "gray-b": $color-gray-b,
+  "gray-c": $color-gray-c,
+  "gray-charcoal": $color-gray-charcoal,
+  "gray-d": $color-gray-d,
+  "gray-e": $color-gray-e,
+  "green-dark-pastel-green": $color-green-dark-pastel-green,
+  "green-forest-crayola": $color-green-forest-crayola,
+  "green-forest": $color-green-forest,
+  "green-miami-mint": $color-green-miami-mint,
+  "green-persian": $color-green-persian,
+  "green-vegetable-mint": $color-green-vegetable-mint,
+  "indigo-persian": $color-indigo-persian,
+  "mint-chutney": $color-mint-chutney,
+  "orange-burnt-sienna": $color-orange-burnt-sienna,
+  "orange-pantone": $color-orange-pantone,
+  "orange-robust-tomato": $color-orange-robust-tomato,
+  "orange-sunray": $color-orange-sunray,
+  "orange-yellow-crayola": $color-orange-yellow-crayola,
+  "pink-frostbite": $color-pink-frostbite,
+  "pink-watermelon": $color-pink-watermelon,
+  "pink-winter-sky": $color-pink-winter-sky,
+  "pink": $color-pink,
+  "purple-blue-violet": $color-purple-blue-violet,
+  "purple-chinese-violet": $color-purple-chinese-violet,
+  "purple-eggplant": $color-purple-eggplant,
+  "purple-rose": $color-purple-rose,
+  "red-bittersweet": $color-red-bittersweet,
+  "red-light-coral": $color-red-light-coral,
+  "red-light": $color-red-light,
+  "red-old-rose": $color-red-old-rose,
+  "red-orange-tomato": $color-red-orange-tomato,
+  "red-pink-blush": $color-red-pink-blush,
+  "red-pink-bright-pink-crayola": $color-red-pink-bright-pink-crayola,
+  "red-rose-red": $color-red-rose-red,
+  "red": $color-red,
+  "teal-mint": $color-teal-mint,
+  "white-beige": $color-white-beige,
+  "white-transparent": $color-white-transparent,
+  "white": $color-white,
+  "yellow-amber": $color-yellow-amber,
+  "yellow-beige-sunset": $color-yellow-beige-sunset,
+  "yellow-saffron": $color-yellow-saffron,
+  "yellow-vanilla-sun": $color-yellow-vanilla-sun,
+  "yellow-wheat": $color-yellow-wheat,
+  "yellow": $color-yellow,
+  "green-caribbean-current": $color-green-caribbean-current,
+  "orange-syracuse-red-orange": $color-orange-syracuse-red-orange,
+  "purple-mute-lavender-floral": $color-purple-mute-lavender-floral,
+  "yellow-ecru": $color-yellow-ecru,
+);
+
+$map-color-pastel: (
+  "pastel-blue--b": $pastel-blue--b,
+  "pastel-blue": $pastel-blue,
+  "pastel-coral--b": $pastel-coral--b,
+  "pastel-coral": $pastel-coral,
+  "pastel-green--b": $pastel-green--b,
+  "pastel-green": $pastel-green,
+  "pastel-light-gray-blue": $pastel-light-gray-blue,
+  "pastel-pink--b": $pastel-pink--b,
+  "pastel-pink": $pastel-pink,
+  "pastel-purple--b": $pastel-purple--b,
+  "pastel-purple": $pastel-purple,
+  "pastel-yellow--b": $pastel-yellow--b,
+  "pastel-yellow": $pastel-yellow,
+);
+
+// $font-face: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-face: "Work Sans", sans-serif;
+// $font-face: "Oxygen", sans-serif;
+// $font-face: 'Silkscreen', sans-serif;
+// $font-face: 'Shrikhand', serif;
+// $font-face: 'Caprasimo', serif;
+// $font-face: 'Noto Sans', sans-serif;
+$font-size-base: 1rem;
+$font-size-sm-x: $font-size-base * 0.5;
+$font-size-sm: $font-size-base;
+$font-size-md: $font-size-base * 1.5;
+$font-size-lg: $font-size-base * 2;
+$font-size-lg-x: $font-size-base * 2.5;
+$font-size-lg-2x: $font-size-base * 3;
+$font-size-lg-3x: $font-size-base * 3.5;
+$font-size-lg-4x: $font-size-base * 4;
+
+$map-font-size: (
+  "sm-x": $font-size-sm-x,
+  "sm": $font-size-sm,
+  "md": $font-size-md,
+  "lg": $font-size-lg,
+  "lg-x": $font-size-lg-x,
+  "lg-2x": $font-size-lg-2x,
+  "lg-3x": $font-size-lg-3x,
+  "lg-4x": $font-size-lg-4x,
+);
+
+$font-weight-thin-2x: 100;
+$font-weight-thin: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-bold-2x: 700;
+
+$map-font-weight: (
+  "thin-2x": $font-weight-thin-2x,
+  "thin": $font-weight-thin,
+  "normal": $font-weight-normal,
+  "bold": $font-weight-bold,
+  "bold-2x": $font-weight-bold-2x,
+);
+
+$margin-base: 0.5rem;
+$margin-sm-x: $margin-base * 0.5;
+$margin-sm: $margin-base;
+$margin-md: $margin-base * 2;
+$margin-lg: $margin-base * 3;
+
+$map-margin: (
+  "sm-x": $margin-sm-x,
+  "sm": $margin-sm,
+  "md": $margin-md,
+  "lg": $margin-lg,
+);
+
+$pad-base: 0.5rem;
+$pad-sm-x: $pad-base * 0.5;
+$pad-sm: $pad-base;
+$pad-md: $pad-base * 2;
+$pad-lg: $pad-base * 3;
+
+$map-pad: (
+  "sm-x": $pad-sm-x,
+  "sm": $pad-sm,
+  "md": $pad-md,
+  "lg": $pad-lg,
+);
+
+$border-radius-base: 4px;
+$border-radius-sm: $border-radius-base;
+$border-radius-md: $border-radius-base * 2;
+$border-radius-lg: $border-radius-base * 3;
+$border-radius-lg-x: $border-radius-base * 4;
+
+$map-border-radius: (
+  "sm": $border-radius-sm,
+  "md": $border-radius-md,
+  "lg": $border-radius-lg,
+  "lg-x": $border-radius-lg-x,
+);
+
+$boxshadow-base: 2px;
+$boxshadow-sm: $boxshadow-base * 1;
+$boxshadow-md: $boxshadow-base * 2;
+$boxshadow-lg: $boxshadow-base * 3;
+$boxshadow-lg-x: $boxshadow-base * 4;
+
+$map-boxshadow: (
+  "sm": $boxshadow-sm,
+  "md": $boxshadow-md,
+  "lg": $boxshadow-lg,
+  "lg-x": $boxshadow-lg-x,
+);
+
+// * NOTE: removing this for now as it is affecting font in all pages
+* {
+  font-family: $font-face;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+// Utility-first CSS
+
+//utility: positioning
+.u-pos-absolute {
+  position: absolute;
+}
+
+.u-pos-fixed {
+  position: fixed;
+}
+
+.u-pos-relative {
+  position: relative;
+}
+
+.u-pos-sticky {
+  position: sticky;
+}
+
+//create templates for all widths and height percentages
+$i: 5;
+@while $i <= 100 {
+  %width-#{$i}\% {
+    width: #{$i}#{"%"};
+  }
+
+  %height-#{$i}\% {
+    height: #{$i}#{"%"};
+  }
+
+  %o-exact-width-#{$i}\% {
+    width: #{$i}#{"%"};
+    min-width: #{$i}#{"%"};
+  }
+
+  .u-h-#{$i}\% {
+    height: #{$i}#{"%"};
+  }
+
+  .u-w-#{$i}\% {
+    width: #{$i}#{"%"};
+  }
+
+  .u-h-#{$i}px {
+    height: $i + px;
+  }
+
+  .u-h-#{$i}vh {
+    height: $i + vh;
+  }
+
+  .u-w-#{$i}px {
+    width: $i + px;
+  }
+
+  $i: $i + 5;
+}
+
+// create widths for 25% & 75%
+$quarter-width: 25, 75;
+@each $i in $quarter-width {
+  %width-#{$i}\% {
+    width: #{$i}#{"%"};
+  }
+
+  %height-#{$i}\% {
+    height: #{$i}#{"%"};
+  }
+}
+
+$dimensions: 150, 200, 250, 300, 350, 400, 450, 500, 750, 1000;
+@each $i in $dimensions {
+  .u-w-#{$i}px {
+    width: $i + px;
+  }
+
+  .u-h-#{$i}px {
+    height: $i + px;
+  }
+}
+
+//utiltiy: height
+.u-h-min-100vh {
+  min-height: 100vh;
+}
+
+// .u-h-25\% {
+//   @extend %height-25\%;
+// }
+
+// .u-h-50\% {
+//   @extend %height-50\%;
+// }
+
+// .u-h-75\% {
+//   @extend %height-75\%;
+// }
+
+// .u-h-100\% {
+//   @extend %height-100\%;
+// }
+
+// //utility: width
+// .u-w-25\% {
+//   @extend %width-25\%;
+// }
+
+// .u-w-30\% {
+//   @extend %width-30\%;
+// }
+
+// .u-w-40\% {
+//   @extend %width-40\%;
+// }
+
+// .u-w-50\% {
+//   @extend %width-50\%;
+// }
+
+// .u-w-60\% {
+//   @extend %width-60\%;
+// }
+
+// .u-w-70\% {
+//   @extend %width-70\%;
+// }
+
+// .u-w-75\% {
+//   @extend %width-75\%;
+// }
+
+// .u-w-80\% {
+//   @extend %width-80\%;
+// }
+
+// .u-w-90\% {
+//   @extend %width-90\%;
+// }
+
+// .u-w-100\% {
+//   @extend %width-100\%;
+// }
+
+.u-w-100vw {
+  width: 100vw;
+}
+
+.u-w-max-1000px {
+  max-width: 1000px;
+}
+
+.u-w-max-1200px {
+  max-width: 1200px;
+}
+
+.u-w-max-1400px {
+  max-width: 1400px;
+}
+
+.u-w-min-100vw {
+  min-width: 100vw;
+}
+
+.u-w-300px {
+  width: 300px;
+}
+
+.u-h-400px {
+  height: 400px;
+}
+
+.o-exact-width-20\% {
+  @extend %o-exact-width-20\%;
+}
+
+.o-exact-width-30\% {
+  @extend %o-exact-width-30\%;
+}
+
+.o-exact-width-40\% {
+  @extend %o-exact-width-40\%;
+}
+
+//utilty: display
+.u-display-block {
+  display: block;
+}
+
+.u-display-inline {
+  display: inline;
+}
+
+.u-inline-block {
+  display: inline-block;
+}
+
+.u-inline-flex {
+  display: inline-flex;
+}
+
+.u-inline-grid {
+  display: inline-grid;
+}
+
+//utility: flexbox
+.u-flex {
+  display: flex;
+}
+
+.u-flex-col {
+  flex-direction: column;
+}
+
+.u-flex-row {
+  flex-direction: row;
+}
+
+.u-flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.u-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.u-flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.u-flex-grow {
+  flex-grow: 1;
+}
+
+.u-flex-child {
+  flex: 1;
+}
+
+.u-ai-start {
+  align-items: flex-start;
+}
+
+.u-ai-end {
+  align-items: flex-end;
+}
+
+.u-ai-center {
+  align-items: center;
+}
+
+.u-ai-stretch {
+  align-items: stretch;
+}
+
+.u-jc-start {
+  justify-content: flex-start;
+}
+
+.u-jc-end {
+  justify-content: flex-end;
+}
+
+.u-jc-center {
+  justify-content: center;
+}
+
+.u-jc-space-around {
+  justify-content: space-around;
+}
+
+.u-jc-space-evenly {
+  justify-content: space-evenly;
+}
+
+.u-jc-space-btwn {
+  justify-content: space-between;
+}
+
+.u-box-size-border {
+  box-sizing: border-box;
+}
+
+// utlity: margin
+@each $key, $val in $map-margin {
+  .u-margin-#{$key} {
+    margin: $val;
+  }
+
+  .u-margin-left-#{$key} {
+    margin-left: $val;
+  }
+
+  .u-margin-right-#{$key} {
+    margin-right: $val;
+  }
+
+  .u-margin-top-#{$key} {
+    margin-top: $val;
+  }
+
+  .u-margin-bottom-#{$key} {
+    margin-bottom: $val;
+  }
+
+  .u-margin-x-#{$key} {
+    margin-left: $val;
+    margin-right: $val;
+  }
+
+  .u-margin-y-#{$key} {
+    margin-top: $val;
+    margin-bottom: $val;
+  }
+
+  .u-margin-bottom-child-#{$key} {
+    > * + * {
+      margin-bottom: $val;
+    }
+  }
+
+  .u-margin-top-child-#{$key} {
+    > * + * {
+      margin-top: $val;
+    }
+  }
+
+  .u-margin-left-child-#{$key} {
+    > * + * {
+      margin-left: $val;
+    }
+  }
+
+  .u-margin-right-child-#{$key} {
+    > * + * {
+      margin-right: $val;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  %margin-#{$i}x {
+    margin: $margin-base * $i;
+  }
+
+  %margin-y-#{$i}x {
+    margin-top: $margin-base * $i;
+    margin-bottom: $margin-base * $i;
+  }
+
+  %margin-top-#{$i}x {
+    margin-top: $margin-base * $i;
+  }
+
+  %margin-left-#{$i}x {
+    margin-left: $margin-base * $i;
+  }
+
+  %margin-bottom-#{$i}x {
+    margin-bottom: $margin-base * $i;
+  }
+
+  %margin-top-child-#{$i}x {
+    > * + * {
+      margin-top: $margin-base * $i;
+    }
+  }
+
+  %margin-left-child-#{$i}x {
+    > * + * {
+      margin-left: $margin-base * $i;
+    }
+  }
+}
+
+.u-margin-none {
+  margin: 0;
+}
+
+.u-margin-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-margin-y-4x {
+  @extend %margin-y-4x;
+}
+
+.u-margin-top-3x {
+  @extend %margin-top-3x;
+}
+
+.u-margin-top-6x {
+  @extend %margin-top-6x;
+}
+
+.u-margin-left-4x {
+  @extend %margin-left-4x;
+}
+
+.u-margin-left-5x {
+  @extend %margin-left-5x;
+}
+
+.u-margin-top-child-3x {
+  @extend %margin-top-child-3x;
+}
+
+.u-margin-top-child-5x {
+  @extend %margin-top-child-5x;
+}
+
+.u-margin-left-child-sm {
+  @extend %margin-left-child-1x;
+}
+
+.u-margin-bottom-6x {
+  @extend %margin-bottom-6x;
+}
+
+//utility: padding
+@each $key, $val in $map-pad {
+  .u-pad-#{$key} {
+    padding: $val;
+  }
+}
+
+@for $i from 1 through 10 {
+  %pad-#{$i}x {
+    padding: $pad-base * $i;
+  }
+
+  %pad-x-#{$i}x {
+    padding-left: $pad-base * $i;
+    padding-right: $pad-base * $i;
+  }
+
+  %pad-y-#{$i}x {
+    padding-top: $pad-base * $i;
+    padding-bottom: $pad-base * $i;
+  }
+
+  %pad-top-#{$i}x {
+    padding-top: $pad-base * $i;
+  }
+
+  %pad-bottom-#{$i}x {
+    padding-bottom: $pad-base * $i;
+  }
+}
+
+.u-pad-none {
+  padding: 0;
+}
+
+.u-pad-auto {
+  padding: auto;
+}
+
+.u-pad-2x {
+  @extend %pad-2x;
+}
+
+.u-pad-y-2x {
+  @extend %pad-y-2x;
+}
+
+.u-pad-y-10x {
+  @extend %pad-y-10x;
+}
+
+.u-pad-x-5x {
+  @extend %pad-x-5x;
+}
+
+.u-pad-x-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.u-pad-top-3x {
+  @extend %pad-top-3x;
+}
+
+.u-pad-top-4x {
+  @extend %pad-top-4x;
+}
+
+.u-pad-top-6x {
+  @extend %pad-top-6x;
+}
+
+.u-pad-top-10x {
+  @extend %pad-top-10x;
+}
+
+.u-pad-bottom-5x {
+  @extend %pad-bottom-5x;
+}
+
+// utility: colors
+@each $key-color, $value-color in $map-color {
+  .u-bg-#{$key-color} {
+    background: $value-color;
+  }
+
+  .u-fg-#{$key-color} {
+    color: $value-color;
+  }
+
+  %border-color-#{$key-color} {
+    border-color: $value-color;
+  }
+
+  %hover-bg-#{$key-color} {
+    &:hover {
+      background: $value-color;
+    }
+  }
+
+  %hover-fg-#{$key-color} {
+    &:hover {
+      color: $value-color;
+    }
+  }
+}
+
+@each $key-color, $value-color in $map-color-pastel {
+  .u-bg-#{$key-color} {
+    background: $value-color;
+  }
+
+  .u-fg-#{$key-color} {
+    color: $value-color;
+  }
+
+  .u-border-color-#{$key-color} {
+    border-color: $value-color;
+  }
+}
+
+.u-bg-transparent {
+  background: transparent;
+}
+
+// Utility: borders
+$border-position: "top", "right", "bottom", "left";
+@each $pos in $border-position {
+  %border-#{$pos}-dashed {
+    border-#{$pos}-style: dashed;
+  }
+
+  %border-#{$pos}-dotted {
+    border-#{$pos}-style: dotted;
+  }
+
+  .u-border-#{$pos}-solid {
+    border-#{$pos}-style: solid;
+  }
+
+  .u-border-#{$pos}-width-1px {
+    border-#{$pos}-width: 1px;
+  }
+
+  %border-#{$pos}-width-2px {
+    border-#{$pos}-width: 2px;
+  }
+
+  %border-#{$pos}-width-3px {
+    border-#{$pos}-width: 3px;
+  }
+
+  %border-#{$pos}-width-5px {
+    border-#{$pos}-width: 5px;
+  }
+}
+
+.u-border-none {
+  border: 0;
+}
+
+.u-outline-none {
+  outline: none;
+}
+
+.u-border-top-dotted {
+  @extend %border-top-dotted;
+}
+
+.u-border-top-width-2px {
+  @extend %border-top-width-2px;
+}
+
+.u-border-top-width-3px {
+  @extend %border-top-width-3px;
+}
+
+.u-border-bottom-dotted {
+  @extend %border-bottom-dotted;
+}
+
+.u-border-bottom-width-2px {
+  @extend %border-bottom-width-2px;
+}
+
+//utility: border-radius
+//NOTE: can not just add '%' to an array of numbers
+// $list-border-radius: 10%, 20%, 30%, 40%, 50%;
+@each $key-border-radius, $value-border-radius in $map-border-radius {
+  .u-border-radius-#{$key-border-radius} {
+    border-radius: #{$value-border-radius};
+  }
+}
+
+$list-border-radius: 10, 20, 30, 40, 50;
+@each $i in $list-border-radius {
+  .u-border-radius-#{$i}\% {
+    border-radius: #{$i}#{"%"};
+  }
+
+  .u-border-radius-br-#{$i}\% {
+    border-bottom-right-radius: #{$i}#{"%"};
+  }
+}
+
+@for $i from 1 to 21 {
+  %border-radius-#{$i}x {
+    border-radius: $border-radius-base * $i;
+  }
+
+  %border-radius-br-#{$i}x {
+    border-bottom-right-radius: $border-radius-base * $i;
+  }
+}
+
+.u-border-radius-5px {
+  border-radius: 5px;
+}
+
+.u-border-radius-10px {
+  border-radius: 10px;
+}
+
+.u-border-radius-20px {
+  border-radius: 20px;
+}
+
+.u-border-radius-1x {
+  @extend %border-radius-1x;
+}
+
+.u-border-radius-br-20x {
+  @extend %border-radius-br-20x;
+}
+
+.u-semicircle-left {
+  border-radius: 50% 0 0 50%;
+}
+
+.u-semicircle-right {
+  border-radius: 0 50% 50% 0;
+}
+
+//utiltiy: font-size
+@for $i from 1 to 11 {
+  %font-size-#{$i}x {
+    font-size: $font-size-base * $i;
+  }
+}
+
+@each $key, $value in $map-font-weight {
+  .u-font-weight-#{$key} {
+    font-weight: $value;
+  }
+}
+
+@each $key, $val in $map-font-size {
+  .u-font-size-#{$key} {
+    font-size: $val;
+  }
+}
+
+.u-font-size-4x {
+  @extend %font-size-4x;
+}
+
+.u-font-size-5x {
+  @extend %font-size-5x;
+}
+
+.u-font-size-6x {
+  @extend %font-size-6x;
+}
+
+//utility: box-shadow
+@each $key-boxshadow, $value-boxshadow in $map-boxshadow {
+  .u-boxshadow-#{$key-boxshadow}-black {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: #{$value-boxshadow}
+      #{$value-boxshadow}
+      #{$value-boxshadow}
+      #{$value-boxshadow}
+      black;
+  }
+}
+
+.u-text-lowercase {
+  text-transform: lowercase;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-text-capitalize {
+  text-transform: capitalize;
+}
+
+.u-text-vertical {
+  transform: rotate(-90deg);
+}
+
+.u-text-decoration-none {
+  text-decoration: none;
+}
+
+.u-text-decoration-underline {
+  text-decoration: underline;
+}
+
+.u-text-decoration-wavy-underline {
+  text-decoration: wavy underline;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.o-text-center {
+  display: grid;
+  place-items: center;
+}
+
+.u-whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.u-whitespace-pre {
+  white-space: pre;
+}
+
+.u-whitespace-prewrap {
+  white-space: pre-wrap;
+}
+
+.u-word-break-all {
+  word-break: break-all;
+}
+
+.u-circle {
+  border-radius: 50%;
+}
+
+.u-overflow-auto {
+  overflow: auto;
+}
+
+.u-overflow-hidden {
+  overflow: hidden;
+}
+
+.u-overflow-scroll {
+  overflow: scroll;
+}
+
+.u-overflow-x-auto {
+  overflow-x: auto;
+}
+
+.u-overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.u-overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.u-overflow-y-auto {
+  overflow-y: auto;
+}
+
+.u-overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.u-overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.u-opacity-30\% {
+  opacity: 0.3;
+}
+
+//Utilty: pointer
+.u-cursor-pointer {
+  cursor: pointer;
+}
+
+//utility: hover
+.u-hover-opacity-50\% {
+  &:hover {
+    opacity: 50%;
+  }
+}
+
+.u-hover-cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.u-list-style-none {
+  list-style: none;
+}
+
+// utility: flex-table
+.o-flex-table {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--column-1 {
+    > * {
+      width: 100%;
+    }
+  }
+
+  &--column-2 {
+    > * {
+      width: 50%;
+    }
+  }
+
+  &--column-3 {
+    > * {
+      width: 33.333%;
+    }
+  }
+}

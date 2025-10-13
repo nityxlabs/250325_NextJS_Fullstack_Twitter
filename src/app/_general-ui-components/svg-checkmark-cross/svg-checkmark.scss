@@ -1,0 +1,17 @@
+.svg-checkmark {
+  --svg-transition-time: 0.25s;
+
+  path {
+    fill: none;
+    // stroke: #111;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: var(--svg-transition-time);
+  }
+
+  &--visible {
+    path {
+      stroke-dashoffset: 0;
+    }
+  }
+}

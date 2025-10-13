@@ -1,0 +1,25 @@
+$color-blue-600: oklch(54.6% 0.245 262.881);
+
+.file-250327-twitter-ui {
+  .c-signup-input {
+    input {
+      width: 100%;
+
+      border: none;
+      // margin-left: map.get($margin, "md");
+    }
+
+    &:focus-within {
+      border: 3px double white;
+    }
+  }
+
+  .c-sign-in-btn {
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: $color-blue-600;
+    }
+  }
+}
