@@ -12,9 +12,9 @@
     "format": "prettier --ignore-path .gitignore --write .",
     "test:cov": "jest --coverage",
     "test:watch": "jest --watch",
-    "backend": "cd src/app/nodejs && node server.ts",
-    "backend:ts": "cd src/app/nodejs && ts-node server.ts",
-    "backend:watch": "cd src/app/nodejs && nodemon server.ts",
+    "backend": "cd src/app/nodejs && node index.ts",
+    "backend:ts": "cd src/app/nodejs && ts-node index.ts",
+    "backend:watch": "cd src/app/nodejs && nodemon index.ts",
     "backend:build": "tsc --project ./"
   },
   "dependencies": {

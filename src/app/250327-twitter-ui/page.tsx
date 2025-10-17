@@ -2,13 +2,12 @@
 LAST:
 1. I think I finished UI as I now I am at video point https://www.youtube.com/watch?v=4GUVz2psWUg @ 3:40:00
   1. LAST: watch https://www.youtube.com/watch?v=4GUVz2psWUg @ 5:54:00 - learning how to make production version of website - I think I should set up with Vercel
-      1. LAST: working on way to prevent updates to MongoDB - see "! EKHANE 25.10.5" in file: "Webpack_React_Learn/250325_NextJS_Fullstack_Twitter/fullstack-twitter-app/src/app/nodejs/250327-express-twitter/index-server.ts"
-          1. LAST: figuring out Vercel works - made first project here: https://vercel.com/mohammed-khans-projects-fce0f583 - learning about "git Trunk based development" -> playing with `git rebase` by adding commits to both `main` and `feature/rebase-test-2` - 3x
+      1. LAST: added my Twitter project to Github here: https://github.com/nityxlabs/250325_NextJS_Fullstack_Twitter -> now I need to figure out how to set up Backend + Vercel - I watched video in https://www.youtube.com/watch?v=CNJkX9rYI8U @ 9:30 and I set up "index.js" files in directory: /Users/mohammedkhan/Documents/NityxPlay/Git_Learn/test-251003
 
 NEXT
 1. NEXT: watch https://www.youtube.com/watch?v=4GUVz2psWUg @ 5:54:00 - learn how to build a production version of NextJS & NodeJS app - see "! EKHANE 25.9.28" in file: "Webpack_React_Learn/250325_NextJS_Fullstack_Twitter/fullstack-twitter-app/src/app/nodejs/250327-express-twitter/index-server.ts"
   1. NEXT: get ready to deploy my project to Vercel, but first look at how to prevent read/write to MongoDB, see "! EKHANE 25.10.5" in file: "Webpack_React_Learn/250325_NextJS_Fullstack_Twitter/fullstack-twitter-app/src/app/nodejs/250327-express-twitter/index-server.ts"
-      1. NEXT: for my vercel project, apply "Git Trunk-Based Development" - see ChatGPT "251007_Git_TrunkBasedDev" - push my project up and start learning how to set up with Vercel (create remote repository, create `git init`, and link to remote repo)
+      1. NEXT: see how I can set up vercel with backend (Github: https://github.com/nityxlabs/250325_NextJS_Fullstack_Twitter) -> see video: https://www.youtube.com/watch?v=CNJkX9rYI8U @ 9:30 and see if I can define "index.ts" so I can set up 2 projects - frontend & backend (NOTE: I see that "page.ts" is also recognized by Vercel as a separate package)
       1. LATER: once I figure out Vercel, then figure out AWS
   1. NOTE: source on document - https://github.com/burakorkmez/twitter-clone/blob/master/UI-DESIGN-STEPS.md
 

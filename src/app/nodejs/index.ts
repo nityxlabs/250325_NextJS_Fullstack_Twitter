@@ -6,7 +6,7 @@ import { expressApp as ExpressTwitter250327 } from "./250327-express-twitter/ind
 
 // Run simple test to see if backend runs
 (function () {
-  console.log("Welcome server.ts");
+  console.log("Welcome to NodeJS index.ts");
 })();
 
 (function () {
