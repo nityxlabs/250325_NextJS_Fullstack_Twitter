@@ -41,4 +41,4 @@ yarn-error.log*
 next-env.d.ts
 
 # extra file
-/src/app/nodejs/250327-express-twitter/twitter-clone-REFERENCE
+src/app/nodejs/250327-express-twitter/twitter-clone-REFERENCE
