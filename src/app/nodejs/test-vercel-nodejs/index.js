@@ -17,15 +17,18 @@ expressApp.use((request, response, next) => {
     "GET,POST,DELETE,PATCH,PUT,HEAD"
   );
 
-  response.send("Vercel NodeJS test running");
-
   next();
+});
+
+expressApp.get("/", (request, response) => {
+  console.log("CONSOLE.LOG: vercel-test.ts - test path");
+  return response.send("/ - root path for vercel-test");
 });
 
 expressApp.get("/vercel-test", (request, response) => {
   console.log("CONSOLE.LOG: vercel-test.ts - test path");
-  response.send(
-    "vercel-test.ts - this is just testing that there is a test path"
+  return response.send(
+    "/vercel-test this is just testing that there is a test path"
   );
 });
 

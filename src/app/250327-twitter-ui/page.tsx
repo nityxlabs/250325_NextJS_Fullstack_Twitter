@@ -2,12 +2,12 @@
 LAST:
 1. I think I finished UI as I now I am at video point https://www.youtube.com/watch?v=4GUVz2psWUg @ 3:40:00
   1. LAST: watch https://www.youtube.com/watch?v=4GUVz2psWUg @ 5:54:00 - learning how to make production version of website - I think I should set up with Vercel
-      1. LAST: added my Twitter project to Github here: https://github.com/nityxlabs/250325_NextJS_Fullstack_Twitter -> now I need to figure out how to set up Backend + Vercel - I watched video in https://www.youtube.com/watch?v=CNJkX9rYI8U @ 9:30 and I set up "index.js" in file: Webpack_React_Learn/250325_NextJS_Fullstack_Twitter/fullstack-twitter-app/src/app/nodejs/test-vercel-nodejs/index.js
+      1. LAST: added my Twitter project to Github here: https://github.com/nityxlabs/250325_NextJS_Fullstack_Twitter -> now I need to figure out how to set up Backend + Vercel - I watched video in https://www.youtube.com/watch?v=CNJkX9rYI8U @ 9:30 and I added the file "index.js" & "vercel.json" in file: Webpack_React_Learn/250325_NextJS_Fullstack_Twitter/fullstack-twitter-app/src/app/nodejs/test-vercel-nodejs/index.js
 
 NEXT
 1. NEXT: watch https://www.youtube.com/watch?v=4GUVz2psWUg @ 5:54:00 - learn how to build a production version of NextJS & NodeJS app - see "! EKHANE 25.9.28" in file: "Webpack_React_Learn/250325_NextJS_Fullstack_Twitter/fullstack-twitter-app/src/app/nodejs/250327-express-twitter/index-server.ts"
   1. NEXT: get ready to deploy my project to Vercel, but first look at how to prevent read/write to MongoDB, see "! EKHANE 25.10.5" in file: "Webpack_React_Learn/250325_NextJS_Fullstack_Twitter/fullstack-twitter-app/src/app/nodejs/250327-express-twitter/index-server.ts"
-      1. NEXT: see how I can set up vercel with backend (Github: https://github.com/nityxlabs/250325_NextJS_Fullstack_Twitter) -> see video: https://www.youtube.com/watch?v=CNJkX9rYI8U @ 9:30 - see if I can upload file "index.js" and get it to work in Vercel: Webpack_React_Learn/250325_NextJS_Fullstack_Twitter/fullstack-twitter-app/src/app/nodejs/test-vercel-nodejs/index.js
+      1. NEXT: see how I can set up vercel with backend (Github: https://github.com/nityxlabs/250325_NextJS_Fullstack_Twitter) -> see video: https://www.youtube.com/watch?v=CNJkX9rYI8U @ 9:30 - I uploaded files "index.js" and get it to work in Vercel, but Vercel is very slow right now: Webpack_React_Learn/250325_NextJS_Fullstack_Twitter/fullstack-twitter-app/src/app/nodejs/test-vercel-nodejs/index.js
       1. LATER: once I figure out Vercel, then figure out AWS
   1. NOTE: source on document - https://github.com/burakorkmez/twitter-clone/blob/master/UI-DESIGN-STEPS.md
 
