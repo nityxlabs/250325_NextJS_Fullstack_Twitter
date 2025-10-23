@@ -26,7 +26,7 @@ expressApp.get("/", (request, response) => {
 });
 
 expressApp.get("/vercel-test", (request, response) => {
-  console.log("CONSOLE.LOG: vercel-test.ts - test path");
+  console.log("CONSOLE.LOG: vercel-test.ts - test path 2");
   return response.send(
     "/vercel-test this is just testing that there is a test path"
   );
