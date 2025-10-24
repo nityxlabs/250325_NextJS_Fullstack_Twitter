@@ -4,21 +4,21 @@ const PORT = 3001;
 
 const expressApp = express();
 
-expressApp.use((request, response, next) => {
-  const allowedDomain = "http://localhost:3000";
-  // const allowedDomain = 'http://localhost:9000';
-  response.header("Access-Control-Allow-Origin", allowedDomain);
-  response.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  response.header(
-    "Access-Control-Allow-Methods",
-    "GET,POST,DELETE,PATCH,PUT,HEAD"
-  );
+// expressApp.use((request, response, next) => {
+//   const allowedDomain = "http://localhost:3000";
+//   // const allowedDomain = 'http://localhost:9000';
+//   response.header("Access-Control-Allow-Origin", allowedDomain);
+//   response.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   response.header(
+//     "Access-Control-Allow-Methods",
+//     "GET,POST,DELETE,PATCH,PUT,HEAD"
+//   );
 
-  next();
-});
+//   next();
+// });
 
 expressApp.get("/", (request, response) => {
   console.log("CONSOLE.LOG: vercel-test.ts - test path");
@@ -36,4 +36,4 @@ expressApp.listen(PORT, () => {
   console.log(`hosting page on port ${PORT} - http://localhost:${PORT}`);
 });
 
-export { expressApp };
+// export { expressApp };
