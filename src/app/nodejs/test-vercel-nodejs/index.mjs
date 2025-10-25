@@ -21,14 +21,14 @@ const expressApp = express();
 // });
 
 expressApp.get("/", (request, response) => {
-  console.log("CONSOLE.LOG: vercel-test.ts - test path 3 - MJS file");
-  return response.send("/ - root path for vercel-test");
+  console.log("CONSOLE.LOG: vercel-test.ts - test path");
+  return response.send("/ - root path for vercel-test - v0.0.3 MJS file");
 });
 
 expressApp.get("/vercel-test", (request, response) => {
-  console.log("CONSOLE.LOG: vercel-test.ts - test path 3 - MJS file");
+  console.log("CONSOLE.LOG: vercel-test.ts - test path");
   return response.send(
-    "/vercel-test this is just testing that there is a test path"
+    "/vercel-test this is just testing that there is a test path - v0.0.3 MJS file"
   );
 });
 
