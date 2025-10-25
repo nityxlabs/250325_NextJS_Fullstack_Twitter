@@ -21,7 +21,7 @@ const expressApp = express();
 // });
 
 expressApp.get("/", (request, response) => {
-  console.log("CONSOLE.LOG: vercel-test.ts - test path");
+  console.log("CONSOLE.LOG: vercel-test.ts - test path 2");
   return response.send("/ - root path for vercel-test");
 });
 
