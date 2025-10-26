@@ -20,15 +20,15 @@ const expressApp = express();
 //   next();
 // });
 
-expressApp.get("/", (request: any, response: any) => {
+expressApp.get("/", (request, response) => {
   console.log("CONSOLE.LOG: vercel-test.ts - test path");
-  return response.send("/ - root path for vercel-test - v0.0.4 MTS file");
+  return response.send("/ - root path for vercel-test - v0.0.5 MJS file");
 });
 
-expressApp.get("/vercel-test", (request: any, response: any) => {
+expressApp.get("/vercel-test", (request, response) => {
   console.log("CONSOLE.LOG: vercel-test.ts - test path");
   return response.send(
-    "/vercel-test this is just testing that there is a test path - v0.0.4 MTS file"
+    "/vercel-test this is just testing that there is a test path - v0.0.5 MJS file"
   );
 });
 
