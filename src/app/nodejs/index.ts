@@ -4,7 +4,7 @@ File Inspiration - Backend: /Users/mohammedkhan/Documents/NityxPlay/Webpack_Reac
 */
 import { expressApp as ExpressTwitter250327 } from "./250327-express-twitter/index-server.ts";
 
-import { expressApp as TestVercelNodeJs } from "./test-vercel-nodejs/index.mts";
+// import { expressApp as TestVercelNodeJs } from "./test-vercel-nodejs/index.mts";
 
 // Run simple test to see if backend runs
 (function () {
@@ -16,7 +16,7 @@ import { expressApp as TestVercelNodeJs } from "./test-vercel-nodejs/index.mts";
   ExpressTwitter250327;
 
   // eslint-disable-next-line
-  TestVercelNodeJs;
+  // TestVercelNodeJs;
 })();
 
 console.log("Server.ts is running");
