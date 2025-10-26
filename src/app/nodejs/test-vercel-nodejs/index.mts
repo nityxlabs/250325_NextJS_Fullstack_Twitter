@@ -22,13 +22,13 @@ const expressApp = express();
 
 expressApp.get("/", (request: any, response: any) => {
   console.log("CONSOLE.LOG: vercel-test.ts - test path");
-  return response.send("/ - root path for vercel-test - v0.0.3 MJS file");
+  return response.send("/ - root path for vercel-test - v0.0.4 MTS file");
 });
 
 expressApp.get("/vercel-test", (request: any, response: any) => {
   console.log("CONSOLE.LOG: vercel-test.ts - test path");
   return response.send(
-    "/vercel-test this is just testing that there is a test path - v0.0.3 MJS file"
+    "/vercel-test this is just testing that there is a test path - v0.0.4 MTS file"
   );
 });
 
@@ -36,4 +36,4 @@ expressApp.listen(PORT, () => {
   console.log(`hosting page on port ${PORT} - http://localhost:${PORT}`);
 });
 
-// export { expressApp };
+export { expressApp };
